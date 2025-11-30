@@ -268,26 +268,29 @@ export default function Profile() {
 const styles = {
   container: {
     minHeight: '100vh',
-    backgroundColor: '#f5f5f5'
+    backgroundColor: '#202124', // dark background
+    paddingTop: '40px'
   },
   content: {
     maxWidth: '600px',
     margin: '0 auto',
-    padding: '40px 20px'
+    padding: '20px'
   },
   card: {
-    backgroundColor: 'white',
+    backgroundColor: '#292a2d',  // card background used in dropdowns
     padding: '40px',
     borderRadius: '12px',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+    boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+    border: '1px solid #3c4043'
   },
   title: {
     fontSize: '28px',
     fontWeight: 'bold' as const,
-    color: '#333',
+    color: '#e8eaed',      // light text
     marginBottom: '30px',
     textAlign: 'center' as const
   },
+
   profilePreview: {
     display: 'flex',
     justifyContent: 'center',
@@ -298,20 +301,21 @@ const styles = {
     height: '120px',
     borderRadius: '50%',
     objectFit: 'cover' as const,
-    border: '4px solid #e0e0e0'
+    border: '4px solid #3c4043' // dark border
   },
   avatarCircle: {
     width: '120px',
     height: '120px',
     borderRadius: '50%',
-    backgroundColor: '#1a73e8',
-    color: 'white',
+    backgroundColor: '#8ab4f8', // your default avatar color
+    color: '#202124',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     fontWeight: 'bold' as const,
     fontSize: '48px'
   },
+
   uploadButtonContainer: {
     display: 'flex',
     flexDirection: 'column' as const,
@@ -321,8 +325,8 @@ const styles = {
   },
   uploadButton: {
     padding: '10px 24px',
-    backgroundColor: '#1a73e8',
-    color: 'white',
+    backgroundColor: '#8ab4f8', // light blue
+    color: '#202124',
     border: 'none',
     borderRadius: '6px',
     fontSize: '14px',
@@ -335,27 +339,28 @@ const styles = {
   },
   fileName: {
     fontSize: '12px',
-    color: '#666',
-    textAlign: 'center' as const
+    color: '#9aa0a6'
   },
+
   success: {
-    backgroundColor: '#d4edda',
-    color: '#155724',
+    backgroundColor: '#1e442f',
+    color: '#8cffc1',
     padding: '12px',
     borderRadius: '4px',
     marginBottom: '20px',
     fontSize: '14px',
-    border: '1px solid #c3e6cb'
+    border: '1px solid #2b6549'
   },
   error: {
-    backgroundColor: '#fee',
-    color: '#c33',
+    backgroundColor: '#3a1e1e',
+    color: '#ffb3b3',
     padding: '12px',
     borderRadius: '4px',
     marginBottom: '20px',
     fontSize: '14px',
-    border: '1px solid #f5c6cb'
+    border: '1px solid #7a3a3a'
   },
+
   form: {
     display: 'flex',
     flexDirection: 'column' as const
@@ -366,16 +371,18 @@ const styles = {
   label: {
     display: 'block',
     marginBottom: '8px',
-    color: '#333',
+    color: '#e8eaed',
     fontSize: '14px',
     fontWeight: '600' as const
   },
   input: {
     width: '100%',
     padding: '12px',
-    border: '1px solid #ddd',
+    border: '1px solid #5f6368',
     borderRadius: '6px',
     fontSize: '16px',
+    backgroundColor: '#303134',      // dark input bg
+    color: '#e8eaed',                 // light text
     boxSizing: 'border-box' as const,
     transition: 'border-color 0.2s'
   },
@@ -383,8 +390,9 @@ const styles = {
     display: 'block',
     marginTop: '6px',
     fontSize: '12px',
-    color: '#666'
+    color: '#9aa0a6'
   },
+
   buttonGroup: {
     display: 'flex',
     gap: '12px',
@@ -393,9 +401,9 @@ const styles = {
   cancelButton: {
     flex: 1,
     padding: '12px',
-    backgroundColor: 'white',
-    color: '#666',
-    border: '1px solid #ddd',
+    backgroundColor: '#3c4043',
+    color: '#e8eaed',
+    border: '1px solid #5f6368',
     borderRadius: '6px',
     fontSize: '16px',
     cursor: 'pointer',
@@ -405,8 +413,8 @@ const styles = {
   saveButton: {
     flex: 1,
     padding: '12px',
-    backgroundColor: '#1a73e8',
-    color: 'white',
+    backgroundColor: '#8ab4f8',
+    color: '#202124',
     border: 'none',
     borderRadius: '6px',
     fontSize: '16px',

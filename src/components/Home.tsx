@@ -1,4 +1,4 @@
-import Navbar from './Navbar';
+
 import ImageGallery from './ImageGallery';
 
 export default function Home() {
